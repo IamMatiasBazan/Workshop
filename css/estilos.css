@@ -250,6 +250,10 @@ article a {
 }
 /* TERMINANDO DE VALIDAR FORMULARIO */
 
+.grupo__icono {
+    color: rgb(187, 41, 41);
+}
+
 #contacto #mapa iframe {
     border: 0;
     height: 530px;

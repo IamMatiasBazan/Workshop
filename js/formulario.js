@@ -12,10 +12,10 @@ const validarFormulario = (e) => {
     switch(e.target.name) { //Obtiene el name de html
         case 'nombre':
             if(expresiones.nombre.test(e.target.value)) { //e.target.value: acceder al valor en el input
-                document.getElementById('grupo__nombre').classList.remove('formulario__grupo-incorrecto')
-                document.getElementById('grupo__nombre').classList.add('formulario__grupo-correcto')
+                document.getElementById('grupo__input').classList.remove('formulario__grupo-incorrecto')
+                document.getElementById('grupo__input').classList.add('formulario__grupo-correcto')
             } else {
-                document.getElementById('grupo__nombre').classList.add('formulario__grupo-incorrecto')
+                document.getElementById('grupo__input').classList.add('formulario__grupo-incorrecto')
             }
         break
         case 'apellido':

@@ -240,8 +240,8 @@ article a {
 
 /* VALIDANDO FORMULARIO */
 .formulario__grupo-correcto {
-	color: #1ed12d;
-	opacity: 1;
+    outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(30, 209, 45, .25);
 }
 
 .formulario__grupo-incorrecto {

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" typr="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">HOME</a></li>
+                <li><a href="#temas" class="scroll">TEMAS</a></li>
+                <li><a href="#galeria" class="scroll">GALERÍA</a></li>
+                <li><a href="#contacto" class="scroll">CONTÁCTENOS</a></li>
+            </ul>
+            <div class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg><span id="menu">Menu</span>
+            </div>
+        </nav>
+    </header>
+    <main id="contenido">
+        <video autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            <p>Su navegador no soporta el elemento video</p>
+        </video>
+        <section id="home">
+            <div id="globo"></div>
+            <h2>Bienvenido al Workshop <span>HTML & CSS</span></h2>
+            <p>
+                HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.
+            </p>
+            <a href="#temas" class="scroll">Conozca más</a>
+            <div id="abajo"></div>
+        </section>
+        <section id="temas">
+            <h3>Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado aquí Texto simulado aquí Texto simulado aquí Texto simulado aquí</p>
+                <a href="">Leer más</a>
+                <div id="imagen2"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado aquí Texto simulado aquí Texto simulado aquí Texto simulado aquí</p>
+                <a href="">Leer más</a>
+                <div id="imagen3"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado aquí Texto simulado aquí Texto simulado aquí Texto simulado aquí</p>
+                <a href="">Leer más</a>
+            </article>
+        </section>
+        <section id="galeria">
+            <h3>Galería</h3>    
+            <div id="fotos">
+                <a href="#" title="Imagen 1">
+                    <img src="img/1.jpg" alt="Imagen 1">
+                </a>
+                <a href="#" title="Imagen 2">
+                    <img src="img/2.jpg" alt="Imagen 2">
+                </a>
+                <a href="#" title="Imagen 3">
+                    <img src="img/3.jpg" alt="Imagen 3">
+                </a>
+                <a href="#" title="Imagen 4">
+                    <img src="img/4.jpg" alt="Imagen 4">
+                </a>
+                <a href="#" title="Imagen 5">
+                    <img src="img/5.jpg" alt="Imagen 5">
+                </a>
+                <a href="#" title="Imagen 6">
+                    <img src="img/6.jpg" alt="Imagen 6">
+                </a>
+                <a href="#" title="Imagen 7">
+                    <img src="img/7.jpg" alt="Imagen 7">
+                </a>
+                <a href="#" title="Imagen 8">
+                    <img src="img/8.jpg" alt="Imagen 8">
+                </a>
+                <a href="#" title="Imagen 9">
+                    <img src="img/9.jpg" alt="Imagen 9">
+                </a>
+            </div>
+        </section>
+        <section id="contacto">
+            <h3>Contáctenos</h3>
+            <div id="formularios">
+                <form action="php/contacto.php" method="post" id="formulario">
+                    <div id="grupo__nombre">
+                        <input type="text" name="nombre" placeholder="Nombre" id="grupo__input">
+                    </div>
+                    <div id="grupo__apellido">
+                        <input type="text" name="apellido" placeholder="Apellido" id="grupo__input">
+                    </div>
+                    <div id="grupo__email">
+                        <input type="text" name="email" placeholder="Email" id="grupo__input">
+                    </div>
+                    <div id="grupo__telefono">
+                        <input type="tel" name="telefono" placeholder="Teléfono" id="grupo__input">
+                    </div>
+                    <div id="grupo__mensajes">
+                        <textarea name="mensajes" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar datos" name="btnEnviar">
+                </form>
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13130.56002348044!2d-58.84041635!3d-34.63853655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1654379104297!5m2!1ses-419!2sar" width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="#contenido" class="arriba scroll"></a>
+        </section>
+        <footer>
+            <p>
+                Copyright &copy; 2022 - Todos los derechos reservados
+            </p>
+        </footer>
+    </main>
+    <script>
+        $(".list").on('click', function(){
+            $("ul li").toggle('slow')
+        });   
+    </script>
+
+    <script src="js/formulario.js"></script>
+    </body>
+</html>

@@ -250,7 +250,12 @@ article a {
 }
 /* TERMINANDO DE VALIDAR FORMULARIO */
 
-.grupo__icono-incorrecto {
+.grupo__icono-incorrecto, .grupo__icono-correcto {
+    font-size: 20px;
+    position: absolute;
+    top: 21.3%;
+    /*right: 10%;*/
+    left: 46.5%;
     color: rgb(187, 41, 41);
 }
 

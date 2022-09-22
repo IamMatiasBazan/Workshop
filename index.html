@@ -107,13 +107,17 @@
             <h3>Contáctenos</h3>
             <div id="formularios">
                 <form action="php/contacto.php" method="post" id="formulario">
-                    <div id="grupo__nombre">
-                        <input type="text" name="nombre" placeholder="Nombre" id="grupo__input">
-                        <i class="grupo__icono-incorrecto fa-sharp fa-solid fa-circle-xmark"></i><!--No me gusta-->
-                        <i class="grupo__icono-correcto fa-sharp fa-solid fa-circle-check"></i><!--Me gusta-->
+                    <div class="formulario__grupo">
+                        <div id="grupo__user">
+                            <input type="text" name="nombre" placeholder="Nombre" id="grupo__input">
+                            <i class="formulario__validicion-estado fa-sharp fa-solid fa-circle-check"></i><!--Me gusta-->
+                        </div>
+                        <p class="formulario__parrafo-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                     </div>
+                    <div>
                     <div id="grupo__apellido">
                         <input type="text" name="apellido" placeholder="Apellido" id="grupo__input">
+                    </div>
                     </div>
                     <div id="grupo__email">
                         <input type="text" name="email" placeholder="Email" id="grupo__input">

@@ -238,6 +238,15 @@ article a {
     text-align: left;
 }
 
+.formulario__validicion-estado {
+    z-index: 100;
+    font-size: 20px;
+    position: absolute;
+    top: 21.3%;
+    left: 46.5%;
+    color: rgb(30, 209, 45);  
+    /*opacity: 0;*/  
+}
 /* VALIDANDO FORMULARIO */
 .formulario__grupo-correcto {
     outline: 0;
@@ -250,14 +259,23 @@ article a {
 }
 /* TERMINANDO DE VALIDAR FORMULARIO */
 
-.grupo__icono-incorrecto, .grupo__icono-correcto {
-    font-size: 20px;
-    position: absolute;
-    top: 21.3%;
-    /*right: 10%;*/
-    left: 46.5%;
-    color: rgb(187, 41, 41);
+.formulario__grupo-correcto .formulario__validicion-estado {
+    opacity: 1;
 }
+
+/* VALIDANDO PARRAFO DEL FORMULARIO */
+.formulario__parrafo-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__parrafo-error-activo {
+	display: block;
+    position: relative;
+    left: 2.3%;
+}
+/* TERMINANDO DE VALIDAR PARRAFO DEL FORMULARIO */
 
 #contacto #mapa iframe {
     border: 0;

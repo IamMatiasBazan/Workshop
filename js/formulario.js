@@ -31,13 +31,13 @@ const validarCampo = (expresion, input, campo) => {
         document.getElementById(`grupo__input-${campo}`).classList.add('formulario__grupo-correcto')
         document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-check')
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-xmark')
-        document.querySelector('.formulario__grupo .formulario__parrafo-error').classList.remove('formulario__parrafo-error-activo')
+        document.querySelector(`.formulario__grupo-${campo} .formulario__parrafo-error`).classList.remove('formulario__parrafo-error-activo')
     } else {
         document.getElementById(`grupo__input-${campo}`).classList.add('formulario__grupo-incorrecto')
         document.getElementById(`grupo__input-${campo}`).classList.remove('formulario__grupo-correcto')
         document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-xmark')
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-check')
-        document.querySelector('.formulario__grupo .formulario__parrafo-error').classList.add('formulario__parrafo-error-activo')
+        document.querySelector(`.formulario__grupo-${campo} .formulario__parrafo-error`).classList.add('formulario__parrafo-error-activo')
     }
 }
 
